@@ -1,0 +1,1 @@
+Select e.employeeID, e.lastname, e.firstname, Count(OrderID) as TotalCount from Orders as o left join Employees e on o.EmployeeID = e.EmployeeID group by e.lastname order by e.employeeID asc

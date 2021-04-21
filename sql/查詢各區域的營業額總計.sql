@@ -1,0 +1,2 @@
+---查詢各區域的營業額總計
+Select g.REGION_NAME, Sum(si.sales) as TotalSales from STORE_INFORMATION as si left join GEOGRAPHY as g on g.GEOGRAPHY_ID = si.FK_GEOGRAPHY_ID where g.REGION_NAME is not null group by g.REGION_NAME 
