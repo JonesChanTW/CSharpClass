@@ -1,4 +1,5 @@
 using System;
+using MyFullTypeStack;
 
 namespace myprogram
 {
@@ -453,7 +454,6 @@ namespace myprogram
                 }
                 break;
                 case 8:
-                default:
                 {
                     MyFullTypeStack<int> myNumStack = new MyFullTypeStack<int>(5);
                     MyFullTypeStack<string> myStringStack = new MyFullTypeStack<string>(5);
@@ -488,6 +488,15 @@ namespace myprogram
                     Console.WriteLine("{0}", myStringStack.Pop());
                     Console.WriteLine("{0}", myStringStack.Pop());
                     Console.WriteLine("{0}", myStringStack.Pop());
+                }
+                break;
+                case 9:
+                default:
+                {
+                    Basca ba = new Basca();
+
+                    ba.CreateBasca(5);
+                    ba.ShowBasca();
                 }
                 break;
             }

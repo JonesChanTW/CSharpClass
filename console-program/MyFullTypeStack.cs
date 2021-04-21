@@ -1,6 +1,6 @@
 using System;
 
-namespace myprogram
+namespace MyFullTypeStack
 {
     public class MyFullTypeStack<T>
     {

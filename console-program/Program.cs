@@ -6,7 +6,7 @@ namespace myprogram
     {
         static void Main(string[] args)
         {
-            Day3.Test();
+            Day5.Test();
         }
     }
 }
