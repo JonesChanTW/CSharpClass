@@ -189,21 +189,26 @@ namespace myprogram
                         try
                         {
                             iUserGuess = int.Parse(Console.ReadLine());
+                            break;
                         }
                         catch(ArgumentNullException ex)
                         {
+                            ///沒輸入東西
                             Console.WriteLine($"ArgumentNullException : {ex.ToString()}");
                         }
                         catch(FormatException ex)
                         {
+                            ///格是錯誤?應該是指輸入的不是數字吧...
                             Console.WriteLine($"FormatException : {ex.ToString()}");
                         }
                         catch(OverflowException ex)
                         {
+                            ///輸入太多東西?
                             Console.WriteLine($"OverflowException : {ex.ToString()}");
                         }
                         catch(Exception ex)
                         {
+                            ///其他沒被列入的狀況
                             Console.WriteLine($"Exception : {ex.ToString()}");
                         }
                     }
