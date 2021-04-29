@@ -52,6 +52,7 @@ namespace GuessFourNum
             this.lblHint.Name = "lblHint";
             this.lblHint.Size = new System.Drawing.Size(0, 12);
             this.lblHint.TabIndex = 0;
+            this.lblHint.Visible = false;
             // 
             // lblGuessResult
             // 
